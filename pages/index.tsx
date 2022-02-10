@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             Engineer.  <br/>
           </h1>
           <p className='font-light'>
-            Improving small businesses's    <br/>
+            Improving small businesses&apos;s    <br/>
             results through great software. <br/>
             Reach out and I will turn your  <br/>
             idea into a ready-to-go design, <br/>
