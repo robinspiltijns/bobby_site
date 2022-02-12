@@ -6,10 +6,16 @@ import art from '../public/art.svg'
 const Home: NextPage = () => {
   return (
     <div>
-      <div className='mt-3 mx-7 absolute'>
-        <Image width='100' src={logo} alt={'Bobby logo'}/>
+      <div className='px-7 sticky top-0 z-10 w-full flex flex-row justify-between items-center bg-dark'>
+        <Image width='80' src={logo} alt={'Bobby logo'}/>
+        <div className='flex flex-row space-x-4'>
+          <button className='font-semibold hover:underline'>Home</button>
+          <button className='font-semibold hover:underline'>Services</button>
+          <button className='font-semibold hover:underline'>Portfolio</button>
+          <button className='font-semibold hover:underline'>Contact</button>
+        </div>
       </div>
-      <div className='flex flex-col justify-center h-screen mx-12'>
+      <div className='flex flex-col justify-center h-full mx-12'>
         <div className='flex flex-row justify-center space-x-20'>
           <div className='flex flex-col space-y-9'>
               <div className='flex flex-col space-y-3'>
