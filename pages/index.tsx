@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='grid place-items-center h-screen'>
-        <div className='flex flex-row space-x-20 py-24'>
+        <div className='flex flex-row space-x-20 py-24 px-12'>
           <div className='flex flex-col space-y-9'>
               <div className='flex flex-col space-y-3'>
                 <div className='text-5xl font-semibold text-white'>Freelance</div>
