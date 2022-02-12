@@ -7,8 +7,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <div className='fixed top-0 z-10 px-7 w-full flex flex-row justify-between items-center bg-dark border-b-2 border-gray'>
-        <Image width='80' src={logo} alt={'Bobby logo'}/>
-        <div className='flex flex-row space-x-4'>
+        <Image width='90' src={logo} alt={'Bobby logo'}/>
+        <div className='flex flex-row space-x-4 hidden lg:block'>
           <button className='font-semibold hover:underline'>Home</button>
           <button className='font-semibold hover:underline'>Services</button>
           <button className='font-semibold hover:underline'>Portfolio</button>
