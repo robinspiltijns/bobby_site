@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                 idea into a ready-to-go design,   <br/>
                 for free!
               </p>
-              <div className='flex flex-col space-y-3 w-fit'>
+              <div className='flex flex-col space-y-3 w-full'>
                 <button className='bg-purple border-purple border-4 px-6 py-2 rounded-xl font-semibold'>Reach out</button>
                 <button className='border-purple px-6 py-2 border-4 rounded-xl text-purple font-semibold'>View services</button>
               </div>
