@@ -6,7 +6,7 @@ import art from '../public/art.svg'
 const Home: NextPage = () => {
   return (
     <div>
-      <div className='px-7 sticky top-0 z-10 w-full flex flex-row justify-between items-center bg-dark'>
+      <div className='fixed top-0 z-10 px-7 w-full flex flex-row justify-between items-center bg-dark border-b-2 border-gray'>
         <Image width='80' src={logo} alt={'Bobby logo'}/>
         <div className='flex flex-row space-x-4'>
           <button className='font-semibold hover:underline'>Home</button>
@@ -15,8 +15,8 @@ const Home: NextPage = () => {
           <button className='font-semibold hover:underline'>Contact</button>
         </div>
       </div>
-      <div className='flex flex-col justify-center h-full mx-12'>
-        <div className='flex flex-row justify-center space-x-20'>
+      <div className='grid place-items-center h-screen'>
+        <div className='flex flex-row space-x-20 py-24'>
           <div className='flex flex-col space-y-9'>
               <div className='flex flex-col space-y-3'>
                 <div className='text-5xl font-semibold text-white'>Freelance</div>
@@ -39,6 +39,9 @@ const Home: NextPage = () => {
               <Image height='100%' src={art} alt="Bobby cover art"/>
             </div>
         </div>
+      </div>
+      <div className='grid place-items-center h-screen'>
+        test
       </div>
     </div>
   )
