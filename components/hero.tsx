@@ -3,7 +3,7 @@ import art from '../public/art.svg'
 
 const Hero = () => {
     return (
-        <div className='flex flex-row space-x-20 px-12'>
+        <div className='flex flex-row space-x-20 px-6'>
             <div className='flex flex-col space-y-9'>
                 <div className='flex flex-col space-y-3'>
                     <div className='text-6xl font-semibold text-white lg:text-5xl'>Freelance</div>
