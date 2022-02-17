@@ -6,16 +6,13 @@ const Hero = () => {
         <div className='flex flex-row space-x-20 px-12'>
             <div className='flex flex-col space-y-9'>
                 <div className='flex flex-col space-y-3'>
-                    <div className='text-5xl font-semibold text-white'>Freelance</div>
-                    <div className='text-5xl font-semibold text-purple'>Product</div>
-                    <div className='text-5xl font-semibold text-white'>Engineer.</div>
+                    <div className='text-6xl font-semibold text-white lg:text-5xl'>Freelance</div>
+                    <div className='text-6xl font-semibold text-purple lg:text-5xl'>Product</div>
+                    <div className='text-6xl font-semibold text-white lg:text-5xl'>Engineer.</div>
                 </div>
-                <p className='font-light'>
-                    Improving small businesses&apos;s <br />
-                    results through great software.   <br />
-                    Reach out and I will turn your    <br />
-                    idea into a ready-to-go design,   <br />
-                    for free!
+                <p className='font-light text-lg lg:text-base'>
+                    Improving small businesses&apos;s results through great software.  
+                    Reach out and I will turn your idea into a ready-to-go design, for free!
                 </p>
                 <div className='flex flex-col space-y-3 w-full'>
                     <button className='bg-purple border-purple border-4 px-6 py-2 rounded-xl font-semibold'>Reach out</button>
