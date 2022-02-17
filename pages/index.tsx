@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import Hero from '../components/hero'
 import NavBar from '../components/navbar'
-import logo from '../public/logo.svg'
+import ReachOut from '../components/reach-out'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +11,7 @@ const Home: NextPage = () => {
         <Hero/>
       </div>
       <div className='grid place-items-center h-screen'>
-        test
+        <ReachOut/>
       </div>
     </div>
   )
