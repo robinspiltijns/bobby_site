@@ -5,10 +5,20 @@ type Data = {
   name: string
 }
 
+interface RequestBody {
+  emailAdress: string,
+  message: string
+}
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log("Hello, world!");
-  res.status(200).json({ name: 'John Doe' })
+    if (req.method !== 'POST') {
+      res.status(501)
+      return
+    }
+    console.log(JSON.parse(req.body));
+    res.status(200)
+    return
 }
