@@ -1,10 +1,10 @@
 const ReachOut = () => {
-    const onClick = () => {
-        const res = fetch('/api/hello', {
+    const onClick = async () => {
+        const res = await fetch('/api/hello', {
             method: 'POST',
             body: JSON.stringify({
-                emailAdress: "test@test.test",
-                message: 'This is a test email.'
+                email: 'test@test.test',
+                message: 'This is a test message'
             })
         })
         console.log(res);

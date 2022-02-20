@@ -10,15 +10,13 @@ interface RequestBody {
   message: string
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-    if (req.method !== 'POST') {
-      res.status(501)
-      return
-    }
-    console.log(JSON.parse(req.body));
-    res.status(200)
-    return
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method !== 'POST') {
+    res.status(501).json("NOT IMPLEMENTED")
+  }
+  const requestBody: RequestBody = JSON.parse(req.body)
+  console.log(requestBody);
+  console.log(process.env.KEY);
+  res.status(200).json("OK")
+
 }
