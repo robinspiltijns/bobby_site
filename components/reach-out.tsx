@@ -1,6 +1,9 @@
 const ReachOut = () => {
+    const onClick = () => {
+        fetch('/api/hello')
+    }
     return (
-        <div>
+        <div onClick={onClick}>
             reach out
         </div>
     )
