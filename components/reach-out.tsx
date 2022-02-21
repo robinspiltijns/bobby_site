@@ -9,7 +9,6 @@ const ReachOut = () => {
                 message: 'This is a test message sent from the frontend.'
             })
         })
-        console.log(res);
     }
     return (
         <div onClick={onClick}>
