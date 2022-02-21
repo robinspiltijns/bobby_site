@@ -2,16 +2,16 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import sgMail, { MailDataRequired } from '@sendgrid/mail'
 
 interface RequestBody {
+  name: string,
   email: string,
   message: string,
 }
 
 function isRequestBody(obj: any): obj is RequestBody {
-  if (
+  return typeof(obj.name) === 'string' && 
     typeof(obj.email) === 'string' && 
     typeof(obj.message) === 'string'
-    ) return true
-  return false
+    
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<string>) {
@@ -30,9 +30,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   try {
     sgMail.setApiKey(process.env.KEY)
     const msg: MailDataRequired = {
-      to: requestBody.email,
+      to: 'spiltijnsrobin@gmail.com',
       from: 'spiltijnsrobin@gmail.com',
-      subject: 'Sendgrid test email',
+      subject: `Bobby message from ${requestBody.name} (${requestBody.email})`,
       text: requestBody.message
     }
     await sgMail.send(msg) 
