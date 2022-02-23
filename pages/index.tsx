@@ -7,10 +7,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <NavBar/>
-      <div className='grid place-items-center h-screen py-24'>
+      <div className='py-24 lg:h-screen lg:grid lg:place-items-center'>
         <Hero/>
       </div>
-      <div className='grid place-items-center h-screen'>
+      <div className='lg:mx-auto lg:max-w-lg'>
         <ReachOut/>
       </div>
     </div>
