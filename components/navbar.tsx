@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div ref={navRef} className="fixed top-0 z-10 w-full">
-      <div className='w-full flex flex-row justify-between items-center bg-dark border-b-2 border-gray px-3 lg:px-7 '>
+      <div className='w-full flex flex-row justify-between items-center bg-dark border-b-2 border-gray-900 px-3 lg:px-7 '>
         <Image width='90' src={logo} alt={'Bobby logo'} />
         <div onClick={onMenuClick} className="space-y-2 lg:hidden">
           <div className="w-8 h-1 bg-white rounded"></div>
@@ -34,10 +34,10 @@ const NavBar = () => {
       </div>
       {menuOpen ?
         <div className="flex flex-col w-full items-center z-10 bg-dark lg:hidden">
-          <div className="w-full py-5 flex flex-row justify-center border-b-2 border-gray">
+          <div className="w-full py-5 flex flex-row justify-center border-b-2 border-gray-900">
             <button className='font-semibold hover:underline'>Home</button>
           </div>
-          <div className="w-full py-5 flex flex-row justify-center border-b-2 border-gray">
+          <div className="w-full py-5 flex flex-row justify-center border-b-2 border-gray-900">
             <button className='font-semibold hover:underline'>Contact</button>
           </div>
         </div>

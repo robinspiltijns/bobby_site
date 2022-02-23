@@ -18,7 +18,11 @@ const ReachOut = () => {
         setMessage(e.target.value)
     }
     
-    const disableSubmit = name === '' || email === '' || message === ''
+    const isNameEmpty = name === ''
+    const isEmailEmpty = email === ''
+    const isMessageEmpty = message === ''
+
+    const disableSubmit = isNameEmpty || isEmailEmpty || isMessageEmpty
 
     const onSubmit = async (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -37,20 +41,25 @@ const ReachOut = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={onSubmit}>
-                <label>
+        <div className='w-full px-6'>
+            <form className='flex flex-col space-y-3 w-full' onSubmit={onSubmit}>
+                <div className='font-semibold'>
                     Name:
-                    <input type='text' value={name} onChange={onNameChange}/>
-                </label>
-                <label>
+                </div>
+                <input 
+                    className={(isNameEmpty ? 'border-gray-500' : 'border-purple') + ' bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
+                    type='text' 
+                    value={name} 
+                    onChange={onNameChange}
+                    />
+                <div className='font-semibold'>
                     Email:
-                    <input type='text' value={email} onChange={onEmailChange}/>
-                </label>
-                <label>
+                </div >
+                <input type='text' value={email} onChange={onEmailChange}/>
+                <div className='font-semibold'>
                     Message:
-                    <textarea value={message} onChange={onMessageChange}/>
-                </label>
+                </div>
+                <textarea value={message} onChange={onMessageChange}/>
                 <button disabled={disableSubmit} type='submit'>Submit</button>
             </form>
         </div>
