@@ -70,7 +70,8 @@ const ReachOut = () => {
                     value={message} 
                     onChange={onMessageChange}
                 />
-                <button className={(disableSubmit ? 'bg-gray-500' : 'bg-blue') + ' px-6 py-3 rounded-xl font-semibold'} disabled={disableSubmit} type='submit'>Let&apos;s chat!</button>
+                <button className={(disableSubmit ? 'bg-gray-500' : 'bg-blue') + ' px-6 py-3 rounded-xl font-semibold mb-2'} disabled={disableSubmit} type='submit'>Let&apos;s chat!</button>
+                <p className='font-light text-gray-200'>Or mail robinspiltijns@bobby.com</p>
             </form>
         </div>
     )
