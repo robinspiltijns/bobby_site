@@ -42,24 +42,33 @@ const ReachOut = () => {
 
     return (
         <div className='w-full px-6'>
-            <form className='flex flex-col space-y-3 w-full' onSubmit={onSubmit}>
-                <div className='font-semibold'>
+            <form className='flex flex-col w-full' onSubmit={onSubmit}>
+                <div className='font-semibold mb-2'>
                     Name:
                 </div>
                 <input 
-                    className={(isNameEmpty ? 'border-gray-500' : 'border-purple') + ' bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
+                    className={(isNameEmpty ? 'border-gray-500' : 'border-purple') + ' mb-4 bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
                     type='text' 
                     value={name} 
                     onChange={onNameChange}
-                    />
-                <div className='font-semibold'>
+                />
+                <div className='font-semibold mb-2'>
                     Email:
                 </div >
-                <input type='text' value={email} onChange={onEmailChange}/>
-                <div className='font-semibold'>
+                <input 
+                    className={(isEmailEmpty ? 'border-gray-500' : 'border-orange') + ' mb-4 bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
+                    type='text' 
+                    value={email} 
+                    onChange={onEmailChange}
+                />
+                <div className='font-semibold mb-2'>
                     Message:
                 </div>
-                <textarea value={message} onChange={onMessageChange}/>
+                <textarea 
+                    className={(isMessageEmpty ? 'border-gray-500' : 'border-blue') + ' mb-4 bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
+                    value={message} 
+                    onChange={onMessageChange}
+                />
                 <button disabled={disableSubmit} type='submit'>Submit</button>
             </form>
         </div>
