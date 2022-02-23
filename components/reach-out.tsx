@@ -43,6 +43,7 @@ const ReachOut = () => {
     return (
         <div className='w-full px-6'>
             <form className='flex flex-col w-full' onSubmit={onSubmit}>
+                <h2 className='text-5xl font-semibold mb-6'>Interested? Say hi!</h2>
                 <div className='font-semibold mb-2'>
                     Name:
                 </div>
@@ -65,11 +66,11 @@ const ReachOut = () => {
                     Message:
                 </div>
                 <textarea 
-                    className={(isMessageEmpty ? 'border-gray-500' : 'border-blue') + ' mb-4 bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
+                    className={(isMessageEmpty ? 'border-gray-500' : 'border-blue') + ' mb-6 bg-dark border-4 focus:border-white focus:border-opacity-100 outline-none p-2 rounded-lg'} 
                     value={message} 
                     onChange={onMessageChange}
                 />
-                <button disabled={disableSubmit} type='submit'>Submit</button>
+                <button className={(disableSubmit ? 'bg-gray-500' : 'bg-blue') + ' px-6 py-3 rounded-xl font-semibold'} disabled={disableSubmit} type='submit'>Let&apos;s chat!</button>
             </form>
         </div>
     )

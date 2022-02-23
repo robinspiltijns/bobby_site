@@ -6,9 +6,9 @@ const Hero = () => {
         <div className='flex flex-row space-x-20 px-6'>
             <div className='flex flex-col space-y-9'>
                 <div className='flex flex-col space-y-3'>
-                    <div className='text-6xl font-semibold text-white'>Freelance</div>
-                    <div className='text-6xl font-semibold text-purple'>Product</div>
-                    <div className='text-6xl font-semibold text-white'>Engineer.</div>
+                    <h1 className='text-6xl font-semibold text-white'>Freelance</h1>
+                    <h1 className='text-6xl font-semibold text-purple'>Product</h1>
+                    <h1 className='text-6xl font-semibold text-white'>Engineer.</h1>
                 </div>
                 <p className='font-light text-lg lg:text-base break-words'>
                     Improving small businesses&apos;s   <br/>
