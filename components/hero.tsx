@@ -10,7 +10,7 @@ const Hero = () => {
                     <h1 className='text-6xl font-semibold text-purple'>Product</h1>
                     <h1 className='text-6xl font-semibold text-white'>Engineer.</h1>
                 </div>
-                <p className='font-light text-lg lg:text-base break-words lg:max-w-sm'>
+                <p className='font-light text-lg lg:text-base break-words lg:max-w-xs'>
                     Improving small businesses&apos;s results through great software. Reach out and I will turn your idea into a ready-to-go design, for free!
                 </p>
                 <div className='flex flex-col space-y-3 w-full '>
